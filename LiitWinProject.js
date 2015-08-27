@@ -1,6 +1,11 @@
-var DataLoad = function () { };
+var SortToggleType = { "Ascend" : 1, "Descend" : 2 };
+
+var DataLoad = function () {};
 
 var bookdatacopy = {};
+
+var sortToggleType;
+var savSortType;
 
 DataLoad.prototype.getSomeJsonData = function (aJsonFile, typeJson) {
     var dataReturned = {};
@@ -11,22 +16,57 @@ DataLoad.prototype.getSomeJsonData = function (aJsonFile, typeJson) {
     });
 };
 
+DataLoad.prototype.triggerToggleSort = function(sortType) {
+    if (!savSortType)
+        savSortType = sortType;
+    else if (savSortType == sortType) {
+    	if (sortToggleType == SortToggleType.Ascend)
+            sortToggleType = SortToggleType.Descend;
+    	else
+            sortToggleType = SortToggleType.Ascend;
+    }
+    else {
+        savSortType = sortType;
+        sortToggleType = SortToggleType.Ascend;
+    }
+};
+
 function needToSort(columnToSort, bookdatacopy) {
 
     var sortedBooks = bookdatacopy;
 
     switch (columnToSort) {
         case "Sort_Books":
-            sortedBooks.TableElements.sort(function (a, b) { return (a.colNum - b.colNum) });
+            if (sortToggleType == SortToggleType.Ascend) {
+                sortedBooks.TableElements.sort(function (a, b) { return (a.colNum - b.colNum) });
+            }
+            else {
+                sortedBooks.TableElements.sort(function (a, b) { return (b.colNum - a.colNum) });
+            }
             break;
         case "Sort_Title":
-            sortedBooks.TableElements.sort(function (a, b) { return (a.title > b.title ? 1 : -1) });
+            if (sortToggleType == SortToggleType.Ascend) {
+                sortedBooks.TableElements.sort(function (a, b) { return (a.title > b.title ? 1 : -1) });
+            }
+            else {
+                sortedBooks.TableElements.sort(function (a, b) { return (a.title < b.title ? 1 : -1) });
+            }
             break;
         case "Sort_Author":
-            sortedBooks.TableElements.sort(function (a, b) { return (a.author_lname > b.author_lname ? 1 : -1) });
+            if (sortToggleType == SortToggleType.Ascend) {
+                sortedBooks.TableElements.sort(function (a, b) { return (a.author_lname > b.author_lname ? 1 : -1) });
+            }
+            else {
+                sortedBooks.TableElements.sort(function (a, b) { return (a.author_lname < b.author_lname ? 1 : -1) });
+            }
             break;
         case "Sort_Date":
-            sortedBooks.TableElements.sort(function (a, b) { return (a.pubDate > b.pubDate ? 1 : -1) });
+            if (sortToggleType == SortToggleType.Ascend) {
+                sortedBooks.TableElements.sort(function (a, b) { return (a.pubDate > b.pubDate ? 1 : -1) });
+            }
+            else {
+                sortedBooks.TableElements.sort(function (a, b) { return (a.pubDate < b.pubDate ? 1 : -1) });
+            }
             break;
         default:
             break;
@@ -113,6 +153,7 @@ $(document).ready(function () {
     var getTheHdrFtrData;
     var getTheBookData;
 
+    //Test if we are on the Book Table DOM
     var testBkPage = document.getElementById("bk_tbl");
 
     $(window).unload(function () {
@@ -122,14 +163,17 @@ $(document).ready(function () {
     });
 
     getTheHdrFtrData = new DataLoad;
-    getTheHdrFtrData.getSomeJsonData("http://localhost/myApp/liitLinkStore.json", "HdrFtr");
+    getTheHdrFtrData.getSomeJsonData("https://suzgthb.github.io/suzy_nuwbedev/liitLinkStore.json", "HdrFtr");
 
     if (testBkPage) {
         $.ajaxSetup({ cache: false });
         getTheBookData = new DataLoad;
-        getTheBookData.getSomeJsonData("http://localhost/myApp/liitLinkStoreBooks.json", "BookData");
+        getTheBookData.getSomeJsonData("http://suzgthb.github.io/suzy_nuwbedev/liitLinkStoreBooks.json", "BookData");
         $("li").on('click', function () {
+                if (!sortToggleType)
+                    sortToggleType = SortToggleType.Ascend;
             var sortType = $(this).text();
+            getTheBookData.triggerToggleSort(sortType);
             needToSort(sortType, bookdatacopy);
         });
     }
