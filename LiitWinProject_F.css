@@ -30,10 +30,6 @@ body {
 .addr_class input {
     margin-left: 55px;
 }
- 
-.age_selection label {
-    height:
-}
 
 .age_selection select {
     margin-left: 105px;
@@ -42,30 +38,34 @@ body {
 }
 
 .comments_class label {
-    position: absolute;
-    left: 12%;
-    margin-top: 15px;
+    position: relative;
+    top: 30px;
 }
 
 .comments_class textarea {
-    margin-top: 16px;
     margin-left: 304px;
     font-size: x-large;
 }
 
 .remchar_class label {
-    margin-left: 440px;
+    position: relative;
+    left: 53%;
+    bottom: 95px;
     font-size: large;
 }
 
 #chars_remaining {
+    position: relative;
+    left: 53%;
+    bottom: 95px;
     text-align: right;
 }
 
 .submitBtn {
-    position: absolute;
+    position: relative;
     margin-top: 53px;
-    left: 43%;
+    left: 40%;
+    value: Submit;
     font-size: x-large;
     font-weight: bold;
 }

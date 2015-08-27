@@ -122,12 +122,12 @@ $(document).ready(function () {
     });
 
     getTheHdrFtrData = new DataLoad;
-    getTheHdrFtrData.getSomeJsonData("http://localhost/myApp/liitLinkStore.json", "HdrFtr");
+    getTheHdrFtrData.getSomeJsonData("https://suzgthb.github.io/suzy_nuwbedev/liitLinkStore.json", "HdrFtr");
 
     if (testBkPage) {
         $.ajaxSetup({ cache: false });
         getTheBookData = new DataLoad;
-        getTheBookData.getSomeJsonData("http://localhost/myApp/liitLinkStoreBooks.json", "BookData");
+        getTheBookData.getSomeJsonData("http://suzgthb.github.io/suzy_nuwbedev/liitLinkStoreBooks.json", "BookData");
         $("li").on('click', function () {
             var sortType = $(this).text();
             needToSort(sortType, bookdatacopy);
