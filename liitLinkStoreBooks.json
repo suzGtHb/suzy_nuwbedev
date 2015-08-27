@@ -1,0 +1,64 @@
+{
+"TableElements":[{
+    "colNum": "1",
+    "title": "Algorithms 3rd Edition in C++",
+    "author_fname": "Robert",
+    "author_lname": "Sedgewick",
+    "pubDate": "2009-05-20"
+  }, 
+{
+    "colNum": "2",
+    "title": "Programming in HTML5 & JavaScript / CSS3",
+    "author_fname": "Glenn",
+    "author_lname": "Johnson",
+    "pubDate": "2015-02-20"
+  }, {
+    "colNum": "3",
+    "title": "Programming C# 3rd Edition",
+    "author_fname": "Jesse",
+    "author_lname": "Liberty",
+    "pubDate": "2005-02-10"
+  }, {
+    "colNum": "4",
+    "title": "C++ Primer 4th Edition",
+    "author_fname": "Stanley B.",
+    "author_lname": "Lippman",
+    "pubDate": "2007-03-02"
+  }, {
+    "colNum": "5",
+    "title": "STL for C++ programmers",
+    "author_fname": "Lean",
+    "author_lname": "Ammeraal",
+    "pubDate": "1998-07-28"
+  }, {
+    "colNum": "6",
+    "title": "Beginning C++",
+    "author_fname": "Ivor",
+    "author_lname": "Horton",
+    "pubDate": "1998-11-16"
+  }, {
+    "colNum": "7",
+    "title": "C# 3.0 Pocket Reference",
+    "author_fname": "Joseph & Ben",
+    "author_lname": "Albahari",
+    "pubDate": "2008-02-10"
+  }, {
+    "colNum": "8",
+    "title": "Icebreaker",
+    "author_fname": "Ian",
+    "author_lname": "Fleming",
+    "pubDate": "1983-05-16"
+  }, {
+    "colNum": "9",
+    "title": "Huckleberry Finn",
+    "author_fname": "Mark",
+    "author_lname": "Twain",
+    "pubDate": "1884-10-10"
+  }, {
+    "colNum": "10",
+    "title": "Robinson Crusoe",
+    "author_fname": "Daniel",
+    "author_lname": "Defoe",
+    "pubDate": "1719-04-06"
+  }]
+}

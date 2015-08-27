@@ -1,0 +1,46 @@
+body {
+    background: rgba(42, 158, 184, 0.96);
+}
+
+.liit_address {
+    margin: auto;
+    border: ridge 8px #0026ff;
+    background-color: #F0F0F0;
+    width: 800px;
+    font-size: 30px;
+    padding: 40px;
+}
+
+.addr_label {
+    margin-top: 30px;
+    color: #e86262;
+    font-weight: bold;
+}
+
+.addr_phys {
+    color: #182d9f;
+}
+
+#link_liit {
+    color: #a82b2b;
+}
+
+.phone_label {
+    color: #e86262;
+    font-weight: bold;
+}
+
+.phone_num {
+    color: #182d9f;
+}
+
+#liit_pic {
+    width: 235px;
+    height: 365px;
+    float: right;
+    margin-right: 50px;
+}
+
+section > * {
+    margin-bottom: 25px;
+}

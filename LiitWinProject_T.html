@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>LIIT Project</title>
+    <link href="LiitWinProject_T.css" type="text/css" rel="stylesheet" />
+    <link href="LiitWinProject.css" type="text/css" rel="stylesheet" />
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.js"></script>
+    <script type="text/javascript" src="LiitWinProject.js"></script>
+</head>
+
+<body>
+    <iframe class="header-frame" src="header.html"></iframe>
+
+    <section id="main_book_win">
+        <label id="sort_select_title">Select To Sort A Column:</label>
+        <ul class="sort_list" id="sort_tabs">
+            <li id="b_tab">Sort_Books</li>
+            <li id="t_tab">Sort_Title</li>
+            <li id="a_tab">Sort_Author</li>
+            <li id="p_tab">Sort_Date</li>
+        </ul>
+
+        <table border="1" cellspacing="0" cellpadding="0" id="bk_tbl" class="book_table">
+            <tr id="bk_hdr_row">
+                <th class="selected" id="b_hdr">Books</th>
+                <th id="t_hdr">Title</th>
+                <th id="a_hdr">Author</th>
+                <th id="p_hdr">Publish Date</th>
+            </tr>
+        </table>
+    </section>
+
+    <iframe class="footer-frame" src="footer.html"></iframe>
+
+</body>
+</html>

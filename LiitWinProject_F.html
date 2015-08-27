@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>LIIT Project</title>
+    <link href="LiitWinProject.css" type="text/css" rel="stylesheet" />
+    <link href="LiitWinProject_F.css" type="text/css" rel="stylesheet" />
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.js"></script>
+    <script type="text/javascript" src="LiitWinProject.js"></script>
+    <script type="text/javascript" src="LiitWinProject_F.js"></script>
+</head>
+
+<body>
+    <iframe class="header-frame" src="header.html"></iframe>
+
+    <section class="form_info_win">
+        <form class="form_info" action="http://localhost/myapp/liitwinproject_fr.html" method="get">
+            <div class="name_class">
+                <label>Name:</label>
+                <input title="Format is first name last name; alpha characters only - 40 characters maximum!" pattern="[A-Za-z]+\x20[A-za-z]+" size="25" type="text" maxlength="41" autofocus required />
+            </div>
+            <div class="email_class">
+                <label>Email:</label>
+                <input type="email" size="25" maxlength="50" required />
+            </div>
+            <div class="addr_class">
+                <label>Address:</label>
+                <input type="text" size="25" maxlength="40" required />
+            </div>
+            <div class="age_selection">
+                <label>Age:</label>
+                <select required id="ageInput">
+                    <option value="">Please Select Age</option>
+                    <option value="1">1-30</option>
+                    <option value="2">30-50</option>
+                    <option value="3">50 and above</option>
+                </select>
+            </div>
+            <div class="comments_class">
+                <label>Comments:</label>
+                <textarea type="text" id="commentsInput" rows="10" cols="30" maxlength="1000" wrap="hard" required></textarea>
+            </div>
+            <input class="submitBtn" type="submit" />
+        </form>
+
+        <div class="remchar_class">
+            <label><strong>Remaining Chars:</strong></label>
+            <input value="1000" size="5" type="text" disabled id="chars_remaining" />
+        </div>
+
+    </section>
+
+    <iframe class="footer-frame" src="footer.html"></iframe>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>LIIT Project</title>
+    <link href="LiitWinProject.css" type="text/css" rel="stylesheet" />
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.js"></script>
+    <script type="text/javascript" src="LiitWinProject.js"></script>
+    <script type="text/javascript" src="LiitWinProject_V.js"></script>
+</head>
+
+<body>
+    <iframe class="header-frame" src="header.html"></iframe>
+
+    <div id="main_video_win">
+        <video id="cute_bunny" width="520" height="300">
+            <source src="http://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            <source src="http://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
+            Your browser does not support HTML5 video.
+        </video>
+
+        <div>
+            <input id="slider" type="range" value="0" />
+        </div>
+
+        <ul class="video_btns">
+            <li>
+                <button id="playBtn">Play</button>
+                <button id="pauseBtn">Pause</button>
+                <button id="muteBtn">Mute</button>
+                <button id="skipBtn">Skip 1 sec</button>
+            </li>
+        </ul> <!-- End of button list -->
+
+        <div>
+            <label>Current Time:</label>
+            <input id="time_current" type="text" readonly="readonly" />
+        </div>
+        <div>
+            <label>Time Left:</label>
+            <input id="time_left" type="text" readonly="readonly" />
+        </div>
+    </div> <!-- End of main video window -->
+
+    <iframe class="footer-frame" src="footer.html"></iframe>
+
+</body>
+</html>

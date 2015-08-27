@@ -1,0 +1,147 @@
+body {
+    background: rgba(42, 158, 184, 0.96);
+    margin:0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header-frame {
+    width: 100%;
+    overflow-y: hidden;
+    height: 59px;
+    border: 0;
+}
+
+.footer-frame {
+    width: 100%;
+    overflow-y: hidden;
+    height: 95px;
+    border: 0;
+}
+
+.header-container {
+    background-color: #75b2de;
+}
+
+.mainHeaderRow {
+    top: 0;
+    height: 50px;
+    display: inline-block;
+    background-color: #75b2de;
+}
+
+.mainHeaderRow li {
+    display:inline-block;
+}
+
+.liit_logo {
+    width: 85px;
+    margin-top: 5px;
+    margin-right: 50px;
+    margin-left: 10px;
+    height: 35px;
+    background-color: #75b2de;
+    display: inline-block;
+}
+
+#link_h, #link_v, #link_t, #link_c, #link_f, #or_sptr {
+    top: 0;
+    font-size: 35px;
+    padding-right: 4px;
+}
+
+#homepage_area, #main_video_win {
+    margin-left: auto;
+    border: ridge 10px #0026ff;
+    background-color: #F0F0F0;
+    box-sizing: border-box;
+    width: 900px;
+    height: 648px;
+    font-size: 30px;
+    padding: 42px 0px 0px 50px;
+    color: #152ba9;
+    margin-right: auto;
+}
+
+.footer-container {
+    background-color: #75b2de;
+    height: 95px;
+    bottom: 5px;
+}
+
+.mainFooterBlock {
+    width: 201px;
+}
+
+.mainFooterBlock li{
+    display: inline-block;
+    padding-right: 10px; 
+}
+
+.mainFooterBlock li:after, .mainHeaderRow li:after{
+    content: " | ";
+    font-size: 27px;
+    color: red;
+}
+
+.mainHeaderRow li:after {
+    font-size: 35px;
+}
+
+.mainFooterBlock li:nth-child(even):after,
+.mainFooterBlock li:last-child:after,
+.mainHeaderRow li:last-child:after {
+    content: "";
+}
+
+.liit_logo_two{
+    bottom: 5px;
+    right: 20px;
+    width: 100px;
+    height: 28px;
+    background-color: #75b2de;
+    display: inline-block;
+    position: absolute;
+}
+
+a:hover {
+    color: #ff00dc;
+}
+
+#link_h_f, #link_c_f {
+    font-size: 25px;
+}
+
+#link_v_f {
+    font-size: 25px;
+}
+
+#link_f_f {
+    font-size: 25px;
+}
+
+#link_t_f {
+    font-size: 25px;
+}
+
+.video_btns button {
+    width: 95px;
+    font-size: x-large;
+    color: #ff00dc;
+}
+
+.video_btns #skipBtn {
+    width: 150px;
+}
+
+#time_left {
+    margin-left: 35px;
+}
+
+#slider {
+    width: 520px;
+}

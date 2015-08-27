@@ -1,0 +1,81 @@
+#main_book_win {
+    margin:auto;
+    border: ridge 8px #0026ff;
+    background-color: #F0F0F0;
+    width: 1050px;
+    height: 625px;
+    overflow: scroll;
+    scrollbar-arrow-color: #586ad2;
+    padding: 8px;
+}
+
+.book_table {
+    color: #586ad2;
+    font-size: 30px;
+    white-space: nowrap;
+}
+
+#b_hdr {
+    padding-right: 5px;
+}
+
+#t_hdr, #a_hdr {
+
+    color: #586ad2;
+}
+
+#p_hdr {
+    padding-right: 15%;
+    color: #586ad2;
+}
+
+td {
+    border-bottom: 0px thin;
+    border-right: hidden;
+    border-top: hidden;
+    text-align: left;
+    color: #586ad2;
+}
+
+#sort_select_title {
+    font-size: xx-large;
+    font-weight: bold;
+    color: #26c0c0;
+}
+
+.sort_list {
+    margin-top: 3px;
+    font-size: x-large;
+    text-align: left;
+    border: 10px ridge #586ad2;
+    border-collapse: inherit;
+    max-width: 176px;
+    list-style-type: circle;
+    color: #38c84a;
+    font-weight: bold;
+}
+
+    .sort_list #b_tab:hover {
+        color: #db23c1;
+        font-size: xx-large;
+        font-weight: bolder;
+    }
+
+    .sort_list #t_tab:hover {
+        color: #db23c1;
+        font-size: xx-large;
+        font-weight: bolder;
+    }
+
+    .sort_list #a_tab:hover {
+        color: #db23c1;
+        font-size: xx-large;
+        font-weight: bolder;
+        border-collapse: inherit;
+    }
+
+    .sort_list #p_tab:hover {
+        color: #db23c1;
+        font-size: xx-large;
+        font-weight: bolder;
+    }
