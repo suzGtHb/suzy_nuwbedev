@@ -5,11 +5,12 @@
     width: 1050px;
     height: 625px;
     overflow: scroll;
-    scrollbar-arrow-color: #586ad2;
     padding: 8px;
 }
 
 .book_table {
+    width: 80%;
+    border-collapse: separate;
     color: #586ad2;
     font-size: 30px;
     white-space: nowrap;
@@ -20,7 +21,6 @@
 }
 
 #t_hdr, #a_hdr {
-
     color: #586ad2;
 }
 
@@ -30,10 +30,10 @@
 }
 
 td {
-    border-bottom: 0px thin;
     border-right: hidden;
-    border-top: hidden;
+    border-bottom: hidden;
     text-align: left;
+    overflow: hidden;
     color: #586ad2;
 }
 
