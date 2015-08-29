@@ -54,7 +54,7 @@ ul {
     padding-right: 4px;
 }
 
-#homepage_area, #main_video_win {
+.homepage_area, #main_video_win {
     margin-left: auto;
     border: ridge 10px #0026ff;
     background-color: #F0F0F0;
@@ -62,7 +62,7 @@ ul {
     width: 900px;
     height: 648px;
     font-size: 30px;
-    padding: 42px 0px 0px 50px;
+    padding: 45px 0px 0px 70px;
     color: #152ba9;
     margin-right: auto;
 }
