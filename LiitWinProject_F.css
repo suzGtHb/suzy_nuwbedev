@@ -1,63 +1,63 @@
 body {
-    background: rgba(42, 158, 184, 0.96);
+    background: #F0FFFF;
 }
 
 .form_info_win {
     margin: auto;
-    border: ridge 8px #0026ff;
+    border: ridge 2px #0026ff;
     background-color: #F0F0F0;
     box-sizing: border-box;
-    width: 910px;
-    height: 648px;
-    font-size: 30px;
+    width: 650px;
+    height: 500px;
 }
 
 .name_class {
-    margin-top: 55px;
+    margin-top: 52px;
 }
 
 .form_info label {
     margin-left: 15%;
     margin-bottom: 5px;
+    font-size: 20px;
 }
 
 .form_info input {
     margin-left: 80px;
     margin-bottom: 5px;
-    font-size: x-large;
+    font-size: 15px;
 }
 
 .addr_class input {
-    margin-left: 55px;
+    margin-left: 62px;
 }
 
 .age_selection select {
-    margin-left: 105px;
-    height: 41px;
-    font-size: large;
+    margin-left: 95px;
+    height: 30px;
+    font-size: 15px;
 }
 
 .comments_class label {
     position: relative;
-    top: 30px;
+    top: 28px;
 }
 
 .comments_class textarea {
-    margin-left: 304px;
-    font-size: x-large;
+    margin-left: 233px;
+    font-size: large;
 }
 
 .remchar_class label {
     position: relative;
     left: 53%;
-    bottom: 95px;
-    font-size: large;
+    bottom: 78px;
+    font-size: medium;
 }
 
 #chars_remaining {
     position: relative;
     left: 53%;
-    bottom: 95px;
+    bottom: 78px;
     text-align: right;
 }
 
@@ -66,6 +66,4 @@ body {
     margin-top: 53px;
     left: 40%;
     value: Submit;
-    font-size: x-large;
-    font-weight: bold;
 }
