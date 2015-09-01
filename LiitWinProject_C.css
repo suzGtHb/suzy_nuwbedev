@@ -1,12 +1,12 @@
 body {
-    background: rgba(42, 158, 184, 0.96);
+    background: #F0FFFF;
 }
 
 .liit_address {
     margin: auto;
-    border: ridge 8px #0026ff;
+    border: ridge 2px #0026ff;
     background-color: #F0F0F0;
-    width: 800px;
+    width: 600px;
     font-size: 30px;
     padding: 40px;
 }

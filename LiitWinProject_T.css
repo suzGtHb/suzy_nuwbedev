@@ -1,18 +1,20 @@
 #main_book_win {
-    margin:auto;
-    border: ridge 8px #0026ff;
+    margin: auto;
+    border: ridge 2px #0026ff;
     background-color: #F0F0F0;
-    width: 1050px;
-    height: 625px;
+    width: 800px;
+    height: 450px;
     overflow: scroll;
     padding: 8px;
 }
 
 .book_table {
+    margin-top: 12px;
+    margin-left: 8px;
     width: 80%;
     border-collapse: separate;
     color: #586ad2;
-    font-size: 30px;
+    font-size: 20px;
     white-space: nowrap;
 }
 
@@ -38,44 +40,47 @@ td {
 }
 
 #sort_select_title {
-    font-size: xx-large;
+    margin-left: 5px; 
+    font-size: x-large;
     font-weight: bold;
+    text-shadow: 1px 2px #6666FF;
     color: #26c0c0;
 }
 
 .sort_list {
-    margin-top: 3px;
-    font-size: x-large;
+    margin-top: 4px;
+    margin-left: 5px; 
+    font-size: large;
     text-align: left;
-    border: 10px ridge #586ad2;
+    border: 3px ridge #586ad2;
     border-collapse: inherit;
-    max-width: 176px;
-    list-style-type: circle;
+    max-width: 135px;
+    list-style-type: none;
     color: #38c84a;
     font-weight: bold;
 }
 
     .sort_list #b_tab:hover {
         color: #db23c1;
-        font-size: xx-large;
+        font-size: x-large;
         font-weight: bolder;
     }
 
     .sort_list #t_tab:hover {
         color: #db23c1;
-        font-size: xx-large;
+        font-size: x-large;
         font-weight: bolder;
     }
 
     .sort_list #a_tab:hover {
         color: #db23c1;
-        font-size: xx-large;
+        font-size: x-large;
         font-weight: bolder;
         border-collapse: inherit;
     }
 
     .sort_list #p_tab:hover {
         color: #db23c1;
-        font-size: xx-large;
+        font-size: x-large;
         font-weight: bolder;
     }

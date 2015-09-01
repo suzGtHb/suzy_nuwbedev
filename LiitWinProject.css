@@ -1,6 +1,6 @@
 body {
-    background: rgba(42, 158, 184, 0.96);
-    margin:0;
+    background: #F0FFFF;
+    margin: 0;
 }
 
 ul {
@@ -9,11 +9,17 @@ ul {
     margin: 0;
 }
 
+
 .header-frame {
     width: 100%;
-    overflow-y: hidden;
-    height: 59px;
+    overflow: hidden;
+    background-color: #336699;    
+    height: 60px;
     border: 0;
+}
+
+.mainHeaderRow {
+    height: 55px;
 }
 
 .footer-frame {
@@ -24,57 +30,63 @@ ul {
 }
 
 .header-container {
-    background-color: #75b2de;
-}
-
-.mainHeaderRow {
-    top: 0;
-    height: 50px;
-    display: inline-block;
-    background-color: #75b2de;
+    background-color: #336699;
+    height: 60px;
 }
 
 .mainHeaderRow li {
     display:inline-block;
+    margin-top: 10px;
+    padding-left: 15px;
 }
 
 .liit_logo {
-    width: 85px;
+    float: left;
+    width: 65px;
     margin-top: 5px;
-    margin-right: 50px;
-    margin-left: 10px;
-    height: 35px;
+    margin-left: 12px;
+    height: 30px;
     background-color: #75b2de;
-    display: inline-block;
+}
+
+#link_h {
+    margin-left: 50px;
 }
 
 #link_h, #link_v, #link_t, #link_c, #link_f, #or_sptr {
-    top: 0;
-    font-size: 35px;
-    padding-right: 4px;
+    font-size: 15px;
+    margin-right: 15px;
+    color: #CCFFCC;
 }
 
 .homepage_area, #main_video_win {
-    margin-left: auto;
-    border: ridge 10px #0026ff;
+    border: ridge 1px #0026ff;
     background-color: #F0F0F0;
     box-sizing: border-box;
-    width: 900px;
-    height: 648px;
-    font-size: 30px;
-    padding: 45px 0px 0px 70px;
+    font-size: 24px;
+    padding: 55px 0px 0px 70px;
     color: #152ba9;
-    margin-right: auto;
+    margin: auto;
+}
+
+#main_video_win {
+    width: 750px;
+    height: 525px;
+}
+
+.homepage_area {
+    width: 650px;
+    height: 400px;
 }
 
 .footer-container {
-    background-color: #75b2de;
+    background-color: #336699;
     height: 95px;
     bottom: 5px;
 }
 
 .mainFooterBlock {
-    width: 201px;
+    width: 150px;
 }
 
 .mainFooterBlock li{
@@ -84,12 +96,8 @@ ul {
 
 .mainFooterBlock li:after, .mainHeaderRow li:after{
     content: " | ";
-    font-size: 27px;
+    font-size: 12px;
     color: red;
-}
-
-.mainHeaderRow li:after {
-    font-size: 35px;
 }
 
 .mainFooterBlock li:nth-child(even):after,
@@ -101,36 +109,30 @@ ul {
 .liit_logo_two{
     bottom: 5px;
     right: 20px;
-    width: 100px;
-    height: 28px;
+    width: 50px;
+    height: 25px;
     background-color: #75b2de;
     display: inline-block;
     position: absolute;
 }
 
-a:hover {
-    color: #ff00dc;
+a:link {
+    text-decoration: none;
 }
 
-#link_h_f, #link_c_f {
-    font-size: 25px;
+#link_h_f, #link_c_f, #link_v_f, #link_f_f, #link_t_f {
+    font-size: 12px;
+    color: #FFCC99;
 }
 
-#link_v_f {
-    font-size: 25px;
-}
-
-#link_f_f {
-    font-size: 25px;
-}
-
-#link_t_f {
-    font-size: 25px;
+a:hover{
+    text-decoration: underline;
+    border: 1px solid #FF00DC;
 }
 
 .video_btns button {
     width: 95px;
-    font-size: x-large;
+    font-size: large;
     color: #ff00dc;
 }
 
